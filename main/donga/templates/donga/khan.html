@@ -1,0 +1,174 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Appapp &amp; Away Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'khan/css/style.css' %}">
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="css/ie7.css" type="text/css">
+	<![endif]-->
+</head>
+<body>
+	<div class="page">
+		<div class="sidebar">
+			<div id="logo">
+				<a href="http://127.0.0.1:8000/"><img src="{% static 'khan/images/logo.jpg' %}" alt="logo"></a>
+			</div>
+			<ul class="navigation">
+				<li>
+					<a href="/donga/">동아일보</a>
+				</li>
+				<li>
+					<a href="/hankookilbo/">한국일보</a>
+				</li>
+				<li>
+					<a href="/hankyung/">한국경제신문</a>
+				</li>
+				<li  class="selected">
+					<a href="/khan/">경향신문</a>
+				</li>
+				<li>
+					<a href="/mk/">매일경제신문</a>
+				</li>
+				<li>
+					<a href="/seoul/">서울신문</a>
+			</ul>
+			<form action="/khan/"  method="POST">
+				<input type="text" name = "search" value="Search" onblur="this.value=!this.value?'Search':this.value;" onfocus="this.select()" onclick="this.value='';">
+				<input type="submit" value="">
+			</form>
+			<div class="connect">
+				<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+				<a href="http://freewebsitetemplates.com/go/youtube/" id="vimeo">vimeo</a>
+			</div>
+			<p>&#169; Copyright &#169; 2011. <br>
+				Company name. All rights reserved</p>
+		</div>
+		<div class="content">
+			<div class="article">
+				<h2>Hi and welcome, visitor!</h2>
+				<p>저의 첫번째 작업물 입니다. 많이 엉성하지만 잘 봐주셨으면 합니다.</p>
+			</div>
+			<div class="blog">
+				<div class="date">
+					<span>08-10</span>
+					<span>2011</span>
+				</div>
+				<div>
+					<h2>{% csrf_token %}'{{search}}'에 대한 검색어 입니다.</h2>
+					<div>
+						border
+					</div>
+				</div>
+				<ul>
+					<li>
+						<div>
+							<div>
+								<h3>{{title1}}</h3>
+								<p>{{data1}}</p>
+								<a href={{page1}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div>
+								<h3>{{title2}}</h3>
+								<p>{{data2}}</p>
+								<a href={{page2}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div>
+								<h3>{{title3}}</h3>
+								<p>{{data3}}</p>
+								<a href={{page3}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div>
+								<h3>{{title4}}</h3>
+								<p>{{data4}}</p>
+								<a href={{page4}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div>
+								<h3>{{title5}}</h3>
+								<p>{{data5}}</p>
+								<a href={{page5}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div>
+								<h3>{{title6}}</h3>
+								<p>{{data6}}</p>
+								<a href={{page6}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div>
+								<h3>{{title7}}</h3>
+								<p>{{data7}}</p>
+								<a href={{page7}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div>
+								<h3>{{title8}}</h3>
+								<p>{{data8}}</p>
+								<a href={{page8}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div>
+								<h3>{{title9}}</h3>
+								<p>{{data9}}</p>
+								<a href={{page9}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div>
+							<div>
+								<h3>{{title10}}</h3>
+								<p>{{data10}}</p>
+								<a href={{page10}}>Read more>></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="section">
+					<a href="#">back to top</a>
+					<a href="#">Show All</a>
+					<div class="paging">
+						<a href="#">Prev</a>
+						<a href="#">Next</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
